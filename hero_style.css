@@ -1,0 +1,183 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background: linear-gradient(to right, #0F0F0F 60%, #005B41 40%);
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+img {
+    max-width: 300px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    font-family: "Permanent Marker", cursive;
+}
+
+.menu-button {
+    display: none; /* Hide the button by default */
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+  font-weight: bold;
+    font-family: "Nunito", sans-serif;
+}
+
+.hero_page {
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col {
+    width: 400px;
+    margin: 0 50px;
+}
+
+.greeting-text {
+    width: 200px;
+    margin: 20px 0;
+    font-size: 24px;
+    font-family: "Nunito", sans-serif;
+}
+
+.intro-text {
+    width: 300px;
+    margin: 20px 0;
+    line-height: 45px;
+    font-size: 40px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+
+/* Container for the slider */
+.slider {
+    width: 300px;
+    margin: 20px 0;            
+    height: 50px;           
+    overflow: hidden;        
+    position: relative;     
+    display: flex;
+    align-items: center;    
+    padding: 0px 10px;
+    border: solid 2px #005B41;
+    background: linear-gradient(to right, #0F0F0F 80%, #005B41 20% );
+}
+
+/* All the text paragraphs */
+.slide-text {
+    position: absolute; 
+    opacity: 0;            
+    transition: opacity 1s;
+    font-size: 24px; 
+    font-family: "Nunito", sans-serif;      
+    font-weight: bold;      
+    color: #ffffff;          
+}
+
+/* Make the active (visible) slide appear */
+.active {
+    opacity: 1; /* Fully visible */
+}
+
+.copy_right {
+    margin: 90px auto 0 auto;
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.copy_right span {
+    color: #005B41;
+}
+
+
+
+
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .menu-button {
+        display: block; /* Show the button */
+    }
+
+    .nav-links {
+        display: none; /* Hide the links */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust the top position as needed */
+        right: 10%;
+        width: 100%;
+        text-align: right;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show the links when menu is active */
+    }
+
+    .hero_page {
+        flex-direction: column;
+    }
+
+    .col {
+        width: 250px;
+        margin: 30px auto;
+    }
+
+    .hero_img {
+        width: 250px;
+    }
+
+    .slider{
+        width: 100%;
+    }
+
+    .slide-text {
+        font-size: 20px;
+    }
+
+    .copy_right {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,172 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background: #0F0F0F;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+img {
+    width: 300px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    font-family: "Permanent Marker", cursive;
+}
+
+.menu-button {
+    display: none; /* Hide the button by default */
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Nunito", sans-serif;
+}
+
+.project-page {
+    width: 90%;
+    margin: 50px auto;
+}
+
+.project-header-text {
+    width: 200px;
+    margin: 20px 0;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Bebas Neue", serif;
+    border-bottom: 4px solid #005B41;
+}
+
+section {
+    width: 300px;
+    margin: 0;
+}
+
+.projects {
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.projects section a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Nunito", serif;
+}
+
+.project-image {
+    margin: 15px auto;
+}
+
+.porject-name {
+    margin: 10px auto;
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.year {
+    margin: 10px auto;
+    color: #005B41;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.tools {
+    margin: 10px auto;
+    font-size: 20px;
+}
+
+.tools span {
+    margin-right: 10px;
+}
+
+.dark-green {
+    color: #005B41;
+}
+
+.copy_right {
+    margin: 70px auto 0 auto;
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.copy_right span {
+    color: #005B41;
+}
+
+
+
+
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .menu-button {
+        display: block; /* Show the button */
+    }
+
+    .nav-links {
+        display: none; /* Hide the links */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust the top position as needed */
+        right: 10%;
+        width: 100%;
+        text-align: right;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show the links when menu is active */
+    }
+
+    .projects {
+        flex-direction: column;
+    }
+
+
+    .copy_right {
+        margin-top: 0;
+        font-size: 18px;
+    }
+}

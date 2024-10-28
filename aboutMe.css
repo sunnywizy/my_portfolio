@@ -1,0 +1,198 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background: #0F0F0F;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+img {
+    width: 300px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    font-family: "Permanent Marker", cursive;
+}
+
+.menu-button {
+    display: none; /* Hide the button by default */
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+  font-weight: bold;
+    font-family: "Nunito", sans-serif;
+}
+
+.about_page {
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col {
+    width: 400px;
+    margin: 0 50px;
+}
+
+.holder_image {
+    width: 400px;
+    height: 400px;
+    border: 8px solid #005B41;
+}
+
+.about-header-txt {
+    margin: 20px 0;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Bebas Neue", serif;
+    border-bottom: 4px solid #005B41;
+}
+
+.about-discribtion-text {
+    margin: 20px 0;
+    font-size: 14.3px;
+    text-align: justify;
+    font-family: "Nunito", serif;
+}
+
+.btns {
+    width: 400px;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hire-btn {
+    width: 180px;
+    text-align: center;
+    font-size: 14px;
+    background-color: #005B41;
+    color: #0F0F0F;
+    padding: 10px;
+    font-family: "Nunito", serif;
+    border-radius: 3px;
+}
+
+.cv-btn {
+    width: 180px;
+    text-align: center;
+    font-size: 14px;
+    border: 2px solid #005B41;
+    color: #ffffff;
+    padding: 10px;
+    font-family: "Nunito", serif;
+    border-radius: 3px;
+}
+
+h2 a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.copy_right {
+    margin: 90px auto 0 auto;
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.copy_right span {
+    color: #005B41;
+}
+
+
+
+
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .menu-button {
+        display: block; /* Show the button */
+    }
+
+    .nav-links {
+        display: none; /* Hide the links */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust the top position as needed */
+        right: 10%;
+        width: 100%;
+        text-align: right;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show the links when menu is active */
+    }
+
+    .about_page {
+        flex-direction: column;
+    }
+
+    .col {
+        width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .btns {
+        width: 300px;
+        flex-direction: column;
+    }
+
+    .hire-btn, .cv-btn {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .holder_image {
+        margin-top: 60px;
+        width: 300px;
+        height: 300px;
+    }
+
+    .copy_right {
+        margin-top: 0;
+        font-size: 18px;
+    }
+}
