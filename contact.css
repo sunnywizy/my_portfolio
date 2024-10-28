@@ -177,6 +177,7 @@ textarea::placeholder {
 
     form {
         width: 300px;
+        margin: auto;
     }
 
     .copy_right {
