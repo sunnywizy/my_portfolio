@@ -175,8 +175,10 @@ textarea::placeholder {
         display: flex; /* Show the links when menu is active */
     }
 
+    
+
     form {
-        width: 300px;
+        width: 280px;
         margin: auto;
     }
 
